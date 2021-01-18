@@ -539,11 +539,10 @@ input {
 }
 .footer-flex {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .footer-join {
-  margin-top: 12px;
   margin-left: 70px;
 }
 .join-title {
@@ -585,7 +584,51 @@ input {
   background-color: var(--button-bgc);
   outline: none;
 }
-
+/**********Подписаться**********/
+.subscribe {
+  margin-left: 93px;
+}
+.subscribe-container {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.subscribe-button-form {
+  margin-top: 20px;
+  display: flex;
+}
+.subscribe-input {
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: var(--accent-bgc);
+  color: var(--bgc-accent-text-color);
+  font-size: 14px;
+  padding: 15px 16px;
+  width: 358px;
+  margin-right: 12px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-input:focus,
+.subscribe-input:hover {
+  outline: none;
+  border-color: var(--accent-text-color);
+}
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.subscribe-icon {
+  margin-left: 10px;
+  fill: var(--bgc-accent-text-color);
+}
 /*страница портфолио*/
 .portfolio {
   padding-top: 94px;
