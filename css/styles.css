@@ -878,6 +878,9 @@ textarea {
 .modal-form-checkbox:hover::before {
   background-image: url(../images/images-optimisized/svg/checkbox-focus.svg);
 }
+.checkbox-agreement:focus + .modal-form-checkbox::before {
+  background-image: url(../images/images-optimisized/svg/checkbox-focus.svg);
+}
 .checkbox-agreement:checked + .modal-form-checkbox::before {
   width: 16px;
   height: 16px;
@@ -889,9 +892,6 @@ textarea {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.checkbox-agreement:focus + .modal-form-checkbox::before {
-  background-image: url(../images/images-optimisized/svg/checkbox-focus.svg);
 }
 .agreement-link {
   text-decoration-line: underline;
