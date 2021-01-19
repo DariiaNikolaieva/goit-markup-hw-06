@@ -514,7 +514,13 @@ input {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.logo-footer {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-right: 86px;
+}
 .footer-list {
   margin-top: 20px;
 }
@@ -562,7 +568,6 @@ input {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px;
   width: 44px;
   height: 44px;
   border: none;
@@ -572,6 +577,12 @@ input {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.join-item {
+  margin-right: 10px;
+}
+.join-item:last-child {
+  margin-right: 0;
 }
 
 .join-icon {
@@ -588,16 +599,16 @@ input {
 .subscribe {
   margin-left: 93px;
 }
+.subscribe-button-form {
+  margin-top: 15px;
+  display: flex;
+}
 .subscribe-container {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-.subscribe-button-form {
-  margin-top: 15px;
-  display: flex;
 }
 .subscribe-input {
   display: block;
@@ -621,9 +632,23 @@ input {
 }
 .subscribe-button {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  text-align: center;
+  background-color: var(--button-bgc);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
   letter-spacing: 0.06em;
+  color: var(--bgc-accent-text-color);
+  cursor: pointer;
+  outline-color: var(--main-bgc);
 }
 .subscribe-icon {
   margin-left: 10px;
